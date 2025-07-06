@@ -1,115 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 1 HTML Assignment</title>
-</head>
-<body>
-  <form action="#" method="POST">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1 HTML Assignment</title>
+  </head>
+  <body>
+    <form action="#" method="POST">
+      <!-- Simple Nav Bar Using unordered list -->
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-	<!-- Simple Nav Bar Using unordered list -->
+      <fieldset>
+        <section id="contact">
+          <h2>Personal Information</h2>
+          <p>Contact preference</p>
 
-<nav>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
 
-<fieldset>
-<section id="contact">
-<h2>Personal Information</h2>
-<p>Contact preference</p>
+          <br>
 
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </section>
+      </fieldset>
 
+      <fieldset>
+        <section id="home">
+          <h2>Home</h2>
+          <p>Welcome!</p>
 
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required placeholder="Write your message"></textarea>
 
+          <!-- Radio button section (BONUS) -->
+          <p>How did you hear about this site?:</p>
+          <div>
+            <input type="radio" id="Google" name="site" value="Google">
+            <label for="Google" style="margin-right: 20px;">Google</label>
 
-<label for="name">Name:</label>
-<input type="text" id="name" name="name">
+            <input type="radio" id="Facebook" name="site" value="Facebook">
+            <label for="Facebook">Facebook</label>
 
-<br>
+            <input type="radio" id="Twitter" name="site" value="Twitter">
+            <label for="Twitter">Twitter</label>
 
-<label for="email">Email:</label>
-<input type="email" id="email" name="email">
+            <input type="radio" id="Other" name="site" value="Other">
+            <label for="Other">Other</label>
+          </div>
 
-</fieldset>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </section>
+      </fieldset>
 
+      <fieldset>
+        <section id="about">
+          <h2>About Our Products</h2>
+          <p>Product stock Information</p>
 
-<fieldset>
-<section id="home">
-<h2>Home</h2>
-<p>Welcome!</p>
+          <!-- Table Creation + Bonus Header Row -->
+          <table>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+            </tr>
+            <tr>
+              <td>Dell Laptop</td>
+              <td>$459.00</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Chromebook</td>
+              <td>$329.00</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Macbook</td>
+              <td>$999.00</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>HP Laptop</td>
+              <td>$684.00</td>
+              <td>6</td>
+            </tr>
+          </table>
+        </section>
+      </fieldset>
+    </form>
 
-
-<label for="message">Message:</label>
-<textarea id="message" name="message" required placeholder="Write your message"></textarea>
-
-	<!-- Radio button section (BONUS) -->
-
-<p>How did you hear about this site?:</p>
-<div>
-<input type="radio" id="Google" name="site" value="Google">
-<label for="Google" style="margin-right: 20px;">Google</label>
-
-<input type="radio" id="Facebook" name="site" value="Facebook">
-<label for="Facebook">Facebook</label>
-
-<input type="radio" id="Twitter" name="site" value="Twitter">
-<label for="Twitter">Twitter</label>
-
-<input type="radio" id="Other" name="site" value="Other">
-<label for="Other">Other</label>
-</div>
-
-
-<input type="submit" value="Submit">
-<input type="reset" value="Reset">
-</fieldset>
-
-
-<fieldset>
-<section id="about">
-<h2>About Our Products</h2>
-<p>Product stock Information</p>
-
-
-	<!-- Table Creation + Bonus Header Row -->
-
-<table>
-<tr>
-<th>Product</th>
-<th>Price</th>
-<th>Quantity</th>
-</tr>
-<tr>
-<td>Dell Laptop</td>
-<td>$459.00</td>
-<td>3</td>
-</tr>
-<tr>
-<td>Chromebook</td>
-<td>$329.00</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Macbook</td>
-<td>$999.00</td>
-<td>2</td>
-</tr>
-<tr>
-<td>HP Laptop</td>
-<td>$684.00</td>
-<td>6</td>
-</tr>
-</table>
-</fieldset>
-
-</form>
-
-<img src="https://placehold.co/300x200" alt="placeholder image" width="300" height="200">
-
-</body>
+    <img src="https://placehold.co/300x200" alt="placeholder image" width="300" height="200">
+  </body>
 </html>
